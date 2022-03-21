@@ -7,12 +7,12 @@ export default class NotesView {
         this.onNoteDelete = onNoteDelete;
         this.root.innerHTML = `
             <div class="notes__sidebar">
-                <button class="notes__add" type="button">Add Note</button>
+                <button class="notes__add" type="button">Add a Life Component</button>
                 <div class="notes__list"></div>
             </div>
             <div class="notes__preview">
                 <input class="notes__title" type="text" placeholder="New Note...">
-                <textarea class="notes__body">Take Note...</textarea>
+                <textarea class="notes__body">List your top 5s</textarea>
             </div>
         `;
 
