@@ -12,7 +12,7 @@ export default class NotesView {
             </div>
             <div class="notes__preview">
                 <input class="notes__title" type="text" placeholder="Add to your memoir"/>
-                <textarea readonly class="notes__body" placeholder="List your top 5s"> </textarea>
+                <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
             </div>
         `;
 
