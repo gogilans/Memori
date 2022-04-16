@@ -11,7 +11,7 @@ export default class NotesView {
                 <div class="notes__list"></div>
             </div>
             <div class="notes__preview">
-                <input class="notes__title" type="text" placeholder="New Note...">
+                <input class="notes__title" type="text" placeholder="Add to your memoir" readonly>
                 <textarea class="notes__body">List your top 5s</textarea>
             </div>
         `;
