@@ -12,16 +12,16 @@ export default class NotesView {
             </div>
             <div class="notes__preview">
                 <input class="notes__title" type="text" placeholder="Add to your memoir"/>
-                <h3>Top memory</h3>
+                <h4>Top memory</h4>
                 <input type="file" id="image_input" accept="image/png, image/jpg">
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
-                <h3>Second best memory</h3>
+                <h4>Second best memory</h4>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
-                <h3>Third best memory</h3>
+                <h4>Third best memory</h4>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
-                <h4>Fourth best memory</h3>
+                <h4>Fourth best memory</h4>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
-                <h4>Fifth best memory</h3>
+                <h4>Fifth best memory</h4>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
             </div>
         `;
