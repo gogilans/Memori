@@ -12,15 +12,17 @@ export default class NotesView {
             </div>
             <div class="notes__preview">
                 <input class="notes__title" type="text" placeholder="Add to your memoir"/>
-                <h3>Top memory</h3>
+                <h4>Top memory</h4>
+                <input type="file" id="image_input" accept ="image/png, image/jpg"/>
+                <div id="display_image"></div>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
-                <h3>Second best memory</h3>
+                <h4>Second best memory</h4>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
-                <h3>Third best memory</h3>
+                <h4>Third best memory</h4>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
-                <h4>Fourth best memory</h3>
+                <h4>Fourth best memory</h4>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
-                <h4>Fifth best memory</h3>
+                <h4>Fifth best memory</h4>
                 <textarea class="notes__body" placeholder="List your top memories for this life component"> </textarea>
             </div>
         `;
@@ -28,6 +30,17 @@ export default class NotesView {
         const btnAddNote = this.root.querySelector(".notes__add");
         const inpTitle = this.root.querySelector(".notes__title");
         const inpBody = this.root.querySelector(".notes__body");
+        const image_input = document.querySelector("#image_input");
+        var uploaded_image = "";
+
+        image_input.addEventListener("change", function()
+          const reader = new FileReader();
+          reader.addEventListener("load", () => {
+            uploaded_image= reader.result;
+            document.querySelector("#display_image").style.backgroundImage = 'url(${uploaded_image})';
+          });
+          reader.readAsDataURL(this.files[0]);
+        })
 
         btnAddNote.addEventListener("click", () => {
             this.onNoteAdd();
